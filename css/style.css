@@ -1,3 +1,5 @@
+/*CSS GENERAL*/
+
 --root{
     --main-blue: #0065FC;
     --light-blue: #DEEBFF;
@@ -17,4 +19,22 @@ html{
 
 body{
     font-family: 'Raleway', sans-serif;
+}
+
+/*HEADER*/
+
+/*MAIN*/
+
+/*FOOTER*/
+
+/*VERSION TABLETTE*/
+
+@media screen and (min-width: 768px){
+
+}
+
+/*VERSION DESKTOP*/
+
+@media screen and (min-width: 1025px){
+
 }
