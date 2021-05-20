@@ -19,11 +19,45 @@ html{
 
 body{
     font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+h1, h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+a{
+    color: black;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: var(--main-blue);
+}
+
+i.fas{
+    color: var(--main-blue);
 }
 
 /*HEADER*/
 
+button span{
+    display: none;
+}
+
 /*MAIN*/
+
+.stars span i.fas{
+    color: var(--bg-grey);
+}
 
 /*FOOTER*/
 
@@ -37,4 +71,11 @@ body{
 
 @media screen and (min-width: 1025px){
 
+    button i.fas{
+        display: none;
+    }
+
+    button span{
+        display: inline-block;
+    }
 }
