@@ -404,6 +404,20 @@ nav .sign-in a{
     margin-bottom: 1rem;
 }
 
+#accomodations .accomodations-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#accomodations .accomodations-cards a{
+    display: block;
+    width: 100%;
+}
+
 #accomodations article{
     display: flex;
     flex-direction: column;
@@ -457,6 +471,20 @@ nav .sign-in a{
 
 #activities h2{
     margin-bottom: 1rem;
+}
+
+#activities .activities-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#activities .activities-cards a{
+    display: block;
+    width: 100%;
 }
 
 #activities figure{
