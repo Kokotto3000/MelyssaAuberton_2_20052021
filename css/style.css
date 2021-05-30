@@ -54,49 +54,36 @@ span{
 /*HEADER*/
 
 header .container{
-    margin: 1.5rem auto;
+    margin: 1.5rem 0;
     width: 100%;
 }
 
 /*nav*/
 
 nav {
-    font-size: 1.5rem;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     width: 100%;
 }
 
-nav :nth-child(2){
-    order: 3;
-    width: 100%;
+nav a{
+    display: block;
 }
 
 nav .logo{
-    width: 50%;
-    padding-left: 1.5rem;
+    flex-basis: 50%;
+    padding-left: 5%;
 }
 
-nav a{
-    display: block;
-    font-size: 1.4rem;
-}
-
-nav .logo a{
-    
-    width: 100%;
-}
-
-nav .logo a img{
+nav .logo img{
     width: 70%;
 }
 
 nav .sign-in{
-    width: 50%;
+    flex-basis: 50%;
     text-align: right;
-    padding-right: 1.5rem;
-    
+    padding-right: 5%;
 }
 
 nav .sign-in a{
@@ -105,37 +92,39 @@ nav .sign-in a{
     font-size: 1.6rem;
 }
 
-.nav-bar{
-    width: 100%;
+nav .nav-bar{
+    order: 3;
+    flex-basis: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.nav-item{
+nav .nav-item{
     flex-basis: 50%;
     list-style: none;
-    border-bottom: solid 3px var(--bg-grey);
-}
-
-.nav-item a{
+    border-bottom: solid 0.2rem var(--bg-grey);
     padding: 1rem;
 }
 
-.nav-item:hover{
+nav .nav-item a{
+    font-size: 1.3rem;
+}
+
+nav .nav-item:hover{
     border-bottom: solid 3px var(--main-blue);
 }
 
-.nav-item:hover a{
+nav .nav-item:hover a{
     color: var(--main-blue);
 }
 
-.nav-item:active{
+nav .nav-item:active{
     border-bottom: solid 3px var(--main-blue);
 }
 
-.nav-item:active a{
+nav .nav-item:active a{
     color: var(--main-blue);
 }
 
@@ -156,7 +145,6 @@ nav .sign-in a{
 
 .search{
     width: 90%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -174,8 +162,8 @@ nav .sign-in a{
     position: relative;
     width: 100%;
     min-width: 26rem;
-    max-width: 40rem;
-    margin: 1rem auto;
+    max-width: 38rem;
+    margin: 1rem 0;
 }
 
 .search label{
@@ -238,7 +226,6 @@ nav .sign-in a{
     flex-flow: column;
     justify-content: space-around;
     align-items: flex-start;
-    width: 90%;
     margin: 1.5rem auto;
     font-size: 1.6rem;
 }
@@ -308,8 +295,7 @@ nav .sign-in a{
 
 .info{
     display: flex;
-    width: 90%;
-    margin: 1.5rem auto;
+    margin: 1.5rem 0;
 }
 
 .info i.fas{
@@ -440,7 +426,7 @@ nav .sign-in a{
 
 #accomodations .accomodations-cards{
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -514,16 +500,20 @@ nav .sign-in a{
 
 #activities .activities-cards{
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     margin: 0 auto;
 }
 
-#activities .activities-cards a{
+#activities .activities-cards a, #activities .activities-group{
     display: block;
     width: 100%;
+}
+
+#activities a{
+    padding: 1rem 0;
 }
 
 #activities figure{
@@ -534,7 +524,6 @@ nav .sign-in a{
     border-radius: 2rem;
     height: 20rem;
     width: 100%;
-    margin: 0.5rem 0; 
     box-shadow: 0px 3px 20px -7px rgba(51,51,51,0.5), 0px 0px 30px 3px rgba(51,51,51,0);
 }
 
@@ -544,7 +533,7 @@ nav .sign-in a{
 
 #activities figure img{
     width: 100%;
-    height: 75%;
+    height: 100%;
     object-fit: cover;
     border-radius: 2rem 2rem 0 0;
 }
@@ -583,9 +572,67 @@ footer li a{
 
 @media only screen and (min-width: 768px){
 
-    body .container{
-        width: 95%;
+    /*HEADER*/
+
+    header .container{
         margin: 0 auto;
+        width: 90%;
+    }
+
+    /*nav*/
+
+    nav {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    nav .logo{
+        flex-basis: 15%;
+        padding: 1.5rem 0 0 0;
+    }
+    
+    nav .logo img{
+        width: 100%;
+    }
+    
+    nav .sign-in{
+        order: 3;
+        flex-basis: 10%;
+        padding: 2.2rem 1rem;
+    }
+    
+    nav .nav-bar{
+        flex-basis: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
+    
+    nav .nav-item{
+        flex-basis: 30%;
+        border-bottom: none;
+        border-top: solid 0.2rem var(--bg-grey);
+        padding: 2rem 1rem;
+    }
+    
+    nav .nav-item:hover{
+        border-bottom: none;
+        border-top: solid 3px var(--main-blue);
+    }
+    
+    nav .nav-item:active{
+        border-bottom: none;
+        border-top: solid 3px var(--main-blue);
+    }
+
+
+    /*search*/
+
+    .search .title{
+        margin: 1rem 0;
     }
 
     .search button{
@@ -606,22 +653,114 @@ footer li a{
         color: white;
         font-size: 1.5rem;
     }
+
+    /*main*/
+
+    main .container{
+        width: 90%;
+        margin: 0 auto;
+        }
+
+    section{
+        margin: 1rem auto;
+    }
+
+    /*popular*/
+
+    #popular{
+        border-radius: 3rem;
+    }
+
+    /*accomodations*/
+
+    #accomodations{
+        background-color: var(--bg-grey);
+        border-radius: 3rem;
+    }
+
+    #accomodations .accomodations-cards{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: space-between;
+    }
+
+    #accomodations .accomodations-cards a{
+        flex-basis: 49%;
+        margin: 0.1rem 0;
+    }
+
+    /*activities*/
+
+    #activities .container{
+        width: 100%;
+    }
+
+    #activities .activities-cards{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #activities .activities-cards > a, #activities .activities-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50rem;
+    }
+
+    #activities .activities-cards > a{
+        flex-basis: 40%;
+    }
+
+    #activities .activities-group{
+        flex-basis: 57%;
+    }
+
+    #activities figure{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 2rem;
+        height: 100%;
+        width: 100%; 
+        box-shadow: 0px 3px 20px -7px rgba(51,51,51,0.5), 0px 0px 30px 3px rgba(51,51,51,0);
+    }
+
+    #activities .one a:first-child, #activities .two a:last-child{
+        height: 65%;
+    }
+
+    #activities .one a:last-child, #activities .two a:first-child{
+        height: 35%;
+    }
+
+    /*FOOTER*/
+
+    /*FOOTER*/
+
+    footer .container{
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    footer .container div{
+        flex-basis: 30%
+    }
+
+
 }
 
 /*VERSION DESKTOP*/
 
 @media only screen and (min-width: 1024px){
 
-    /*main .container{
-    width: 85%;
-    margin: 0 auto;
-    }*/
-
-    
-
-
-    #popular{
-        border-radius: 3rem;
+    #activities .activities-cards > a, #activities .activities-group{
+        flex-basis: 49%;
     }
-
+    
 }
