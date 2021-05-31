@@ -506,12 +506,13 @@ nav .nav-item:active a{
     width: 100%;
 }
 
-#activities .activities-cards a, #activities .activities-group{
-    display: block;
-    width: 100%;
-}
+/* #activities .activities-cards a, #activities .activities-group{
+    
+} */
 
 #activities a{
+    display: block;
+    width: 100%;
     padding: 1rem 0;
 }
 
@@ -532,7 +533,7 @@ nav .nav-item:active a{
 
 #activities figure img{
     width: 100%;
-    height: 100%;
+    height: 75%;
     object-fit: cover;
     border-radius: 2rem 2rem 0 0;
 }
@@ -607,8 +608,6 @@ footer li a{
         flex-basis: 60%;
         display: flex;
         justify-content: flex-end;
-        /* align-items: center;
-        text-align: center; */
     }
     
     nav .nav-item{
@@ -729,12 +728,27 @@ footer li a{
         box-shadow: 0px 3px 20px -7px rgba(51,51,51,0.5), 0px 0px 30px 3px rgba(51,51,51,0);
     }
 
+    #activities figure img{
+        width: 100%;
+        height: 88.3%;
+        object-fit: cover;
+        border-radius: 2rem 2rem 0 0;
+    }
+
     #activities .one a:first-child, #activities .two a:last-child{
         height: 65%;
     }
 
+    #activities .one a:first-child img, #activities .two a:last-child img{
+        height: 81.9%;
+    }
+
     #activities .one a:last-child, #activities .two a:first-child{
         height: 35%;
+    }
+
+    #activities .one a:last-child img, #activities .two a:first-child img{
+        height: 64%;
     }
 
     /*FOOTER*/
