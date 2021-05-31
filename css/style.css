@@ -357,9 +357,9 @@ nav .nav-item:active a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 #popular .popular-cards a{
@@ -428,9 +428,9 @@ nav .nav-item:active a{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 #accomodations .accomodations-cards a{
@@ -502,9 +502,8 @@ nav .nav-item:active a{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
-    margin: 0 auto;
 }
 
 #activities .activities-cards a, #activities .activities-group{
@@ -540,6 +539,7 @@ nav .nav-item:active a{
 
 #activities figcaption{
     padding: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -607,8 +607,8 @@ footer li a{
         flex-basis: 60%;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
-        text-align: center;
+        /* align-items: center;
+        text-align: center; */
     }
     
     nav .nav-item{
@@ -681,7 +681,7 @@ footer li a{
     #accomodations .accomodations-cards{
         flex-flow: row wrap;
         justify-content: space-between;
-        align-items: space-between;
+        align-items: stretch;
     }
 
     #accomodations .accomodations-cards a{
@@ -698,7 +698,7 @@ footer li a{
     #activities .activities-cards{
         flex-flow: row wrap;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         width: 100%;
         margin: 0 auto;
     }
