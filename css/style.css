@@ -359,7 +359,6 @@ nav .nav-item:active a{
     justify-content: space-around;
     align-items: stretch;
     width: 100%;
-    /* margin: 0 auto; */
 }
 
 #popular .popular-cards a{
@@ -509,6 +508,13 @@ nav .nav-item:active a{
 #activities .activities-cards a, #activities .activities-group{
     display: block;
     width: 100%;
+}
+
+#activities .activities-group{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 #activities a{
