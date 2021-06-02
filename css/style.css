@@ -32,7 +32,7 @@ h1, h2{
 }
 
 h3{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
@@ -348,7 +348,6 @@ nav .nav-item:active a{
 
 #popular .container{
     width: 90%;
-    /* margin: 0 auto; */
     padding: 3rem 0;
 }
 
@@ -374,6 +373,7 @@ nav .nav-item:active a{
 #popular .popular-cards a{
     display: block;
     width: 100%;
+    margin: 0.5rem 0;
 }
 
 #popular .popular-cards article{
@@ -383,10 +383,8 @@ nav .nav-item:active a{
     border-radius: 2rem;
     height: 14rem;
     width: 100%;
-    margin: 0.5rem 0;
     padding: 0.5rem; 
     box-shadow: 0px 3px 20px -7px rgba(51,51,51,0.5), 0px 0px 30px 3px rgba(51,51,51,0);
-
 }
 
 #popular .popular-cards article:hover{
@@ -425,11 +423,13 @@ nav .nav-item:active a{
     justify-content: space-around;
     align-items: flex-start;
     width: 90%;
-    margin: 0 auto;
     padding: 3rem 0;
 }
 
 #accomodations .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
@@ -443,7 +443,8 @@ nav .nav-item:active a{
 
 #accomodations .accomodations-cards a{
     display: block;
-    width: 100%;
+    width: 100%; 
+    margin: 0.5rem 0;
     
 }
 
@@ -455,8 +456,7 @@ nav .nav-item:active a{
     border-radius: 2rem;
     height: 20rem;
     width: 100%;
-    margin: 0.5rem 0;
-    padding: 0.5rem; 
+    padding: 0.5rem;
     box-shadow: 0px 3px 20px -7px rgba(51,51,51,0.5), 0px 0px 30px 3px rgba(51,51,51,0);
 }
 
@@ -499,7 +499,7 @@ nav .nav-item:active a{
     justify-content: space-around;
     align-items: flex-start;
     width: 90%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 3rem 0;
 }
 
@@ -674,10 +674,6 @@ footer li a{
         margin: 0 auto;
     }
 
-    section{
-        /* margin: 1rem auto; */
-    }
-
     /*popular*/
 
     #popular{
@@ -694,12 +690,11 @@ footer li a{
     #accomodations .accomodations-cards{
         flex-flow: row wrap;
         justify-content: space-between;
-        align-items: stretch;
+        align-items: flex-start;
     }
 
     #accomodations .accomodations-cards a{
         flex-basis: 49%;
-        margin: 0.1rem 0;
     }
 
     /*activities*/
@@ -817,21 +812,20 @@ footer li a{
     /*activities*/
 
     #popular{
-        flex-basis: 35%;
+        flex-basis: 33%;
         order: 2;
         height: 33%;
         max-height: 62.5rem;
     }
 
     #popular .popular-cards{
-        justify-content: space-around;
+        justify-content: flex-start;
     }
     
     #popular .popular-cards a{
         display: block;
         width: 100%;
         height: 33%;
-        padding: 0.5rem 0;
     }
 
 
@@ -839,35 +833,43 @@ footer li a{
 
     /*accomodations*/
 
-
-    #accomodations .accomodations-cards a{
-        flex-basis: 31%;
-        padding: 0.5rem 0;
-        height: 47%;
-    }
-
     #accomodations{
-        flex-basis: 60%;
+        flex-basis: 66%;
         order: 1;
         height: 33%;
         max-height: 62.5rem;
     }
-
-
-    
 
     #accomodations .accomodations-cards{
         height: 22.5%;
         max-height: 42.5rem
     }
 
-    #accomodations .accomodations-cards article{
+    #accomodations .accomodations-cards a{
+        flex-basis: 31%;
         max-height: 20rem;
+        height: 50%;
+    }
+
+    #accomodations img{
+        width: 100%;
+        height: 55%;
+        object-fit: cover;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    #accomodations article{
+        justify-content: flex-start;
+    }
+
+    #accomodations .accomodations-cards-content{
+        padding: 2% .8rem 0 0.8rem;
+        flex-shrink: 2;
     }
 
 
 
-
+    /*activities*/
 
     #activities{
         flex-basis: 100%;
