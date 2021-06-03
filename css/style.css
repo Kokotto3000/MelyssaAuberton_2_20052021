@@ -19,16 +19,17 @@ html{
 
 body{
     font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 2.1rem;
     min-width: 37.5rem;
-    max-width: 144rem;
+    /* max-width: 144rem; */
     width: 100%;
+    margin: 0 auto;
 }
 
 h1, h2{
     font-size: 2rem;
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 h3{
@@ -48,11 +49,10 @@ a:hover{
 
 i.fas{
     color: var(--main-blue);
-    font-size: 2rem;
 }
 
 span{
-    font-weight: bold;
+    font-weight: 700;
 }
 
 /*HEADER*/
@@ -92,7 +92,7 @@ nav .sign-in{
 
 nav .sign-in a{
     color: var(--main-blue);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.6rem;
 }
 
@@ -110,10 +110,6 @@ nav .nav-item{
     list-style: none;
     border-bottom: solid 0.2rem var(--bg-grey);
     padding: 1rem;
-}
-
-nav .nav-item a{
-    font-size: 1.3rem;
 }
 
 nav .nav-item:hover{
@@ -143,9 +139,9 @@ nav .nav-item:active a{
     padding: 1rem 0;
 }
 
-.header-search p{
+/* .header-search p{
     font-size: 1.5rem;
-}
+} */
 
 .search{
     width: 90%;
@@ -182,7 +178,7 @@ nav .nav-item:active a{
 .search input[placeholder]{
     font-size: 1.5rem;
     color: black;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .search i.fas{
@@ -191,6 +187,10 @@ nav .nav-item:active a{
 
 .search label i.fa-map-marker-alt{
     color: black;
+}
+
+.search button i.fas{
+    color: white;
 }
 
 .search input{
@@ -214,10 +214,7 @@ nav .nav-item:active a{
     height: 4.5rem;
 }
 
-.search button i.fas{
-    color: white;
-    display: block;
-}
+
 
 .search button span{
     display: none;
@@ -231,7 +228,6 @@ nav .nav-item:active a{
     justify-content: space-around;
     align-items: flex-start;
     margin: 1.5rem auto;
-    font-size: 1.6rem;
 }
 
 .filter .title{
@@ -256,14 +252,28 @@ nav .nav-item:active a{
     transform: scale(1.1);
 }
 
+.filter-items a{
+    padding: 1.1rem 2rem 1.1rem 3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 0.2rem solid var(--bg-grey);
+    border-radius: 0 5rem 5rem 0;
+    margin-left: 2.5rem;
+    height: 100%;
+}
+
 .filter-items:hover a{
     box-shadow: 0px 3px 20px -7px rgba(51,51,51,0.5), 0px 0px 30px 3px rgba(51,51,51,0);
     font-size: 1.6rem;
     border: none;
 }
 
+.filter-items i.fas{
+    font-size: 2rem;
+    padding: 1.5rem 1rem;
+}
+
 .filter-items:hover i.fas{
-    color: var(--main-blue);
     font-size: 2.1rem;
     transform: rotate(-10deg);
 }
@@ -278,20 +288,9 @@ nav .nav-item:active a{
     position: absolute;
 }
 
-.filter-items i.fas{
-    color: var(--main-blue);
-    padding: 1.5rem 1rem;
-}
 
-.filter-items a{
-    padding: 1.1rem 2rem 1.1rem 3rem;
-    font-size: 1.4rem;
-    font-weight: bold;
-    border: 0.2rem solid var(--bg-grey);
-    border-radius: 0 5rem 5rem 0;
-    margin-left: 2.5rem;
-    height: 100%;
-}
+
+
 
 /*info*/
 
@@ -482,7 +481,7 @@ nav .nav-item:active a{
 #accomodations .container > a:last-child{
     display: block;
     font-size: 1.8rem;
-    font-weight: bolder;
+    font-weight: 700;
     margin-top: 2rem;
 }
 
@@ -552,8 +551,7 @@ nav .nav-item:active a{
 
 #activities figcaption{
     padding: 1.5rem;
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 /*FOOTER*/
@@ -575,10 +573,6 @@ footer ul{
 
 footer li{
     list-style: none;
-}
-
-footer li a{
-    font-size: 1.5rem;
 }
 
 /*VERSION TABLETTE*/
@@ -735,7 +729,7 @@ footer li a{
     }
 
     #activities .one a:first-child, #activities .two a:last-child{
-        height: 65%;
+        height: 60%;
     }
 
     #activities .one a:last-child, #activities .two a:first-child{
