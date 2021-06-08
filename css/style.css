@@ -58,7 +58,6 @@ span{
 /*HEADER*/
 
 header .container{
-    margin: 1.5rem 0;
     width: 100%;
 }
 
@@ -77,17 +76,17 @@ nav a{
 
 nav .logo{
     flex-basis: 50%;
-    padding-left: 5%;
+    padding: 3rem;
 }
 
 nav .logo img{
-    width: 70%;
+    width: 10rem;
 }
 
 nav .sign-in{
     flex-basis: 50%;
-    text-align: right;
-    padding-right: 5%;
+    text-align: center;
+    padding: 3rem;
 }
 
 nav .sign-in a{
@@ -253,8 +252,9 @@ nav .nav-item:active a{
 }
 
 .filter-items a{
-    padding: 1.1rem 2rem 1.1rem 3rem;
-    font-size: 1.4rem;
+    display: block;
+    padding: 1.5rem 2rem 1.5rem 3.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     border: 0.2rem solid var(--bg-grey);
     border-radius: 0 5rem 5rem 0;
@@ -270,7 +270,6 @@ nav .nav-item:active a{
 
 .filter-items i.fas{
     font-size: 2rem;
-    padding: 1.5rem 1rem;
 }
 
 .filter-items:hover i.fas{
@@ -278,8 +277,10 @@ nav .nav-item:active a{
     transform: rotate(-10deg);
 }
 
-
 .filter-items p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--light-blue);
     width: 5rem;
     height: 5rem;
@@ -351,12 +352,14 @@ nav .nav-item:active a{
 #popular .title{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
-#popular div p i.fa-chart-line{
+#popular .title p i.fa-chart-line{
     color: black;
+    vertical-align: center;
 }
 
 #popular .popular-cards{
@@ -386,8 +389,9 @@ nav .nav-item:active a{
 }
 
 #popular img{
-    width: 38%;
+    flex-basis: 38%;
     height: 100%;
+    overflow: hidden;
     object-fit: cover;
     border-radius: 1.5rem 0 0 1.5rem;
 }
@@ -438,6 +442,7 @@ nav .nav-item:active a{
 #accomodations .accomodations-cards a{
     display: block;
     margin: 0.5rem 0;
+    height: 30%;
 }
 
 #accomodations article{
@@ -460,6 +465,7 @@ nav .nav-item:active a{
     height: 100%;
     object-fit: cover;
     border-radius: 1.5rem 1.5rem 0 0;
+    overflow: hidden;
 }
 
 #accomodations .accomodations-cards-content{
@@ -527,12 +533,13 @@ nav .nav-item:active a{
 #activities figure img{
     width: 100%;
     height: 100%;
+    overflow: hidden;
     object-fit: cover;
     border-radius: 2rem 2rem 0 0;
 }
 
 #activities figcaption{
-    padding: 1.5rem;
+    padding: 2rem;
     font-weight: 700;
 }
 
@@ -572,36 +579,33 @@ footer li{
     nav {
         width: 90%;
         margin: 0 auto;
+        flex-flow: row nowrap;
         justify-content: space-between;
         align-items: flex-start;
     }
     
     nav .logo{
-        flex-basis: 15%;
-        padding: 1.5rem 0 0 0;
-    }
-    
-    nav .logo img{
-        width: 100%;
+        flex-basis: 70%;
+        padding: 4rem;
     }
     
     nav .sign-in{
         order: 3;
         flex-basis: 10%;
-        padding: 2.2rem 1rem;
+        padding: 4rem;
     }
     
     nav .nav-bar{
-        flex-basis: 60%;
+        flex-basis: 20%;
         display: flex;
         justify-content: flex-end;
     }
     
     nav .nav-item{
-        flex-basis: 30%;
+        flex-basis: 50%;
         border-bottom: none;
         border-top: solid 0.2rem var(--bg-grey);
-        padding: 2rem 1rem;
+        padding: 4rem;
     }
     
     nav .nav-item:hover{
@@ -715,7 +719,7 @@ footer li{
     }
 
     #activities .one a:last-child, #activities .two a:first-child{
-        height: 35%;
+        height: 40%;
     }
 
     /*FOOTER*/
@@ -734,7 +738,7 @@ footer li{
 
 /*VERSION DESKTOP*/
 
-@media only screen and (min-width: 1100px){
+@media only screen and (min-width: 1024px){
 
     .filter{
         display: flex;
