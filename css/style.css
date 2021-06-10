@@ -341,15 +341,9 @@ nav .nav-item:active a{
     display: flex;
     flex-flow: column;
     justify-content: space-around;
-<<<<<<< HEAD
     align-items: stretch;
-<<<<<<< HEAD
     width: 100%;
-=======
->>>>>>> main
-=======
     width: 100%;
->>>>>>> main
 }
 
 #popular .popular-cards a, #accomodations .accomodations-cards a{
@@ -430,9 +424,6 @@ nav .nav-item:active a{
     margin-top: 2rem;
 }
 
-<<<<<<< HEAD
-/*activities*/
-
 #activities .container{
     display: flex;
     flex-direction: column;
@@ -455,11 +446,6 @@ nav .nav-item:active a{
     width: 100%;
 }
 
-<<<<<<< HEAD
-/* #activities .activities-cards a, #activities .activities-group{
-    
-} */
-
 #activities .activities-group{
     display: flex;
     flex-flow: column wrap;
@@ -467,10 +453,6 @@ nav .nav-item:active a{
     align-items: stretch;
 }
 
-=======
->>>>>>> main
-=======
->>>>>>> main
 #activities a{
     display: block;
     padding: 1rem 0;
